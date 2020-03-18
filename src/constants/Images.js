@@ -17,6 +17,7 @@ const IMAGE = {
   ICON_USER: require('../images/user.png'),
   ICON_ADD: require('../images/plus.png'),
   ICON_ARROW: require('../images/arrow.png'),
+  ICON_DOWN_ARROW: require('../images/down_arrow.png'),
 }
 
 export {IMAGE}

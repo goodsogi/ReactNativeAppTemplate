@@ -14,6 +14,7 @@ import {
   ChooseProductScreen,
   ChooseOptionScreen,
    ChooseDateScreen,
+   PayScreen,
 } from './src/tab'
 import {NotificationsScreen} from './src/drawer'
 
@@ -82,6 +83,11 @@ function HomeStack () {
       <StackHome.Screen
         name='ChooseDate'
         component={ChooseDateScreen}
+        options={navOptionHandler}
+      />
+       <StackHome.Screen
+        name='Pay'
+        component={PayScreen}
         options={navOptionHandler}
       />
     </StackHome.Navigator>
