@@ -8,6 +8,9 @@ import {IMAGE} from '../constants/Images'
 const ListItem = ({item}) => {
   const {title} = item
   return (
+     <View
+     >
+
     <View
       style={{
         flexDirection: 'row',
@@ -79,6 +82,11 @@ const ListItem = ({item}) => {
 
       />
     </View>
+ <View  style={{        
+          height: 2,
+          backgroundColor: '#e9e9e9'
+        }} />
+     </View>
   )
 }
 

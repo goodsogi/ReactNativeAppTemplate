@@ -103,7 +103,7 @@ export class HomeScreen extends Component {
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
               <TouchableOpacity
                 style={styles.circleImgContainer2}
-                onPress={() => this.props.navigation.navigate('ChooseCar')}>
+                onPress={() => this.props.navigation.navigate('ChooseCar', {'type': 'mobile' })}>
                 {/* <Image source={IMAGE.ICON_CAR} style={styles.carImg} /> */}
               </TouchableOpacity>
               <Text style={styles.menuText}>출장 세차</Text>
@@ -116,7 +116,7 @@ export class HomeScreen extends Component {
               }}>
               <TouchableOpacity
                 style={styles.circleImgContainer2}
-                onPress={() => this.props.navigation.navigate('HomeDetail')}>
+                onPress={() => this.props.navigation.navigate('ChooseCar', {'type': 'shop' })}>
                 {/* <Image source={IMAGE.ICON_CAR} style={styles.carImg} /> */}
               </TouchableOpacity>
               <Text style={styles.menuText}>로드샵 세차</Text>

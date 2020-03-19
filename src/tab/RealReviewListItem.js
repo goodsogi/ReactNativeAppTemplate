@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Text, View, Image, StyleSheet} from 'react-native'
 import {IMAGE} from '../constants/Images'
-import {Rating} from 'react-native-ratings'
+
 // Component가 아니라서 props는 사용못하나??
 // ()안에 매개변수로 들어오는 듯
 // {item}같이 {}를 쳐야 값이 들어옴
@@ -62,7 +62,7 @@ const ListItem = ({item}) => {
       </Text>
 
       <View style={{width: 87, marginStart: 5, marginTop: 2}}>
-        <Rating ratingCount={5} imageSize={13} />
+       
       </View>
       <Text
         style={{

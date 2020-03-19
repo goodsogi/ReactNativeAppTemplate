@@ -123,7 +123,7 @@ export class ChooseCarScreen extends Component {
             justifyContent: 'center',
             backgroundColor: 'black',
           }}
-          onPress={() => this.props.navigation.navigate('ChooseProduct', this.state.chosenCarData)}>
+          onPress={() => this.props.route.params.type == 'mobile'? this.props.navigation.navigate('ChooseProduct', this.state.chosenCarData):this.props.navigation.navigate('ChooseShop', this.state.chosenCarData) }>
           <Text style={{fontSize: 21, fontWeight: 'bold', color: 'white'}}>
             다음
           </Text>

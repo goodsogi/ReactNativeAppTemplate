@@ -18,6 +18,8 @@ const IMAGE = {
   ICON_ADD: require('../images/plus.png'),
   ICON_ARROW: require('../images/arrow.png'),
   ICON_DOWN_ARROW: require('../images/down_arrow.png'),
+  ICON_EXPAND: require('../images/expand.png'),
+   ICON_PIN: require('../images/pin.png'),
 }
 
 export {IMAGE}

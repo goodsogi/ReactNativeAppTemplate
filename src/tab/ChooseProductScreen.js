@@ -138,7 +138,7 @@ this.setState(
 
             <TouchableOpacity
               onPress={() =>
-                this.props.navigation.navigate('ChooseOption', item)
+                {this.props.navigation.navigate('ChooseOption' , [item, {'from':'mobile'}])}
               }>
               <ProductListItem item={item} />
             </TouchableOpacity>

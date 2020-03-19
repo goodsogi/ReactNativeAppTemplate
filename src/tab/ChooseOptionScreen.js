@@ -152,7 +152,8 @@ export class ChooseOptionScreen extends Component {
               alignItems: 'center',
               justifyContent: 'center'  
             }}
-            onPress={() =>  this.props.navigation.navigate('ChooseDate')}>
+            // params가 여러 개인 경우 []로 위치를 지정해야 함 
+            onPress={() =>  this.props.route.params[1].from == 'mobile'? this.props.navigation.navigate('ChooseDate'):this.props.navigation.navigate('ChooseDateInShop')}>
             <Text style={{fontSize: 20, fontWeight: 'bold', color: 'white'}}>
               예약하기
             </Text>
